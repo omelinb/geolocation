@@ -16,7 +16,7 @@ System Dependencies
 Database creation
 -----------------
 
-Add next information after line 22 (pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>) in /config/database.yml:  
+Add information in /config/database.yml:  
 &nbsp;&nbsp;host: localhost  
 &nbsp;&nbsp;user: your_pg_user  
 &nbsp;&nbsp;password: your_pg_user_password  
