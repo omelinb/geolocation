@@ -1,24 +1,42 @@
-# README
+Description
+-----------
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Test API application for viewing people at a specific distance(30km) and for getting person's profile.
 
-Things you may want to cover:
 
-* Ruby version
+System Dependencies
+-------------------
 
-* System dependencies
+- Ruby 2.5.3 (install with [rbenv](https://github.com/sstephenson/rbenv))
+- Rubygems
+- Bundler (`gem install bundler`)
+- PostgreSQL
 
-* Configuration
 
-* Database creation
+Database creation
+-----------------
 
-* Database initialization
+Add information in /config/database.yml:  
+&nbsp;&nbsp;host: localhost  
+&nbsp;&nbsp;user: your_pg_user  
+&nbsp;&nbsp;password: your_pg_user_password  
+  
+- rails db:create  
+- rails db:migrate  
+- rails db:seed  
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+API
+---
 
-* Deployment instructions
+- /users/?coords=latitude,longitute &nbsp; **GET** Get lisf of people closer than 30km  
+- /users/1 &nbsp; **GET** Get person's profile
 
-* ...
+
+Examples
+--------
+
+```shell
+curl http://localhost:3000/users/?coords=11.023666,12.326888
+curl http://localhost:3000/users/6
+```
