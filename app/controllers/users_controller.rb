@@ -3,6 +3,7 @@
 
 class UsersController < ApplicationController
   before_action :find_users, only: :index
+  before_action :get_user, only: :show
 
   RADIUS = 30
 
@@ -13,8 +14,7 @@ class UsersController < ApplicationController
 
   # GET /users/1
   def show
-    user = User.find(params[:id])
-    render json: user.to_json(only: [:age, :latitude, :longitude])
+    render json: @user.to_json(only: [:age, :latitude, :longitude])
   end
 
 
@@ -22,6 +22,10 @@ class UsersController < ApplicationController
     # Find users that are in the specific radius
     def find_users
       @users = User.within(RADIUS, origin: user_params)
+    end
+
+    def get_user
+      @user = User.find(params[:id])
     end
 
     def user_params
