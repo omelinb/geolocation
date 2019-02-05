@@ -24,8 +24,8 @@ Database creation
 API
 ---
 
-- /users/?coords=latitude,longitute GET   Get lisf of people closer than 30km  
-- /users/1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GET                           Get person's profile
+- /users/?coords=latitude,longitute &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GET   Get lisf of people closer than 30km  
+- /users/1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GET                           Get person's profile
 
 
 Examples
