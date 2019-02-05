@@ -1,6 +1,3 @@
-# curl 'http://localhost:3000/users/index?coords=17.254522,2.434317'
-# curl 'http://localhost:3000/users/6'
-
 class UsersController < ApplicationController
   before_action :find_users, only: :index
   before_action :get_user, only: :show
