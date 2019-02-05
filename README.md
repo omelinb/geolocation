@@ -24,10 +24,13 @@ Database creation
 API
 ---
 
-- /users/?coords=latitude,longitute &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GET   Get lisf of people closer than 30km  
-- /users/1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GET                           Get person's profile
+- /users/?coords=latitude,longitute &nbsp; **GET** Get lisf of people closer than 30km  
+- /users/1 &nbsp; **GET** Get person's profile
 
 
 Examples
 --------
-
+```shell
+curl http://localhost:3000/users/?coords=11.023666,12.326888
+curl http://localhost:3000/users/6
+```
