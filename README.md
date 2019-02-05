@@ -1,7 +1,7 @@
 Description
 -----------
 
-Test API application for viewing people at a specific distance(30km) and for getting person's profile.
+Test application with api for getting people at a specific distance(30km) and for getting person's profile.
 
 
 System Dependencies
@@ -16,10 +16,10 @@ System Dependencies
 Database creation
 -----------------
 
-Add information in /config/database.yml:  
+Add data about your pguser in /config/database.yml:  
 &nbsp;&nbsp;host: localhost  
-&nbsp;&nbsp;user: your_pg_user  
-&nbsp;&nbsp;password: your_pg_user_password  
+&nbsp;&nbsp;user: pg_user  
+&nbsp;&nbsp;password: pg_password  
   
 - rails db:create  
 - rails db:migrate  
