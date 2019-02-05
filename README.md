@@ -1,7 +1,7 @@
 Description
 -----------
 
-Application for viewing people at a distance 30km.  
+Test API application for viewing people at a specific distance(30km) and for getting person's profile.
 
 
 System Dependencies
@@ -16,13 +16,13 @@ System Dependencies
 Database creation
 -----------------
 
-rails db:create
-rails db:migrate
-rails db:seed
+rails db:create  
+rails db:migrate  
+rails db:seed  
 
 
 API
 ---
 
-GET /users/?coords=latitude,longitute   Get lisf of people closer than 30km
-GET /users/1                            Get person profile
+GET /users/?coords=latitude,longitute   Get lisf of people closer than 30km  
+GET /users/1                            Get person's profile
