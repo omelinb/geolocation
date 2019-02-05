@@ -16,6 +16,11 @@ System Dependencies
 Database creation
 -----------------
 
+Add next information after line 22 (pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>) in /config/database.yml:  
+host: localhost  
+user: your_pg_user  
+password: your_pg_user_password  
+  
 - rails db:create  
 - rails db:migrate  
 - rails db:seed  
