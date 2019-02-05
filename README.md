@@ -16,13 +16,18 @@ System Dependencies
 Database creation
 -----------------
 
-rails db:create  
-rails db:migrate  
-rails db:seed  
+- rails db:create  
+- rails db:migrate  
+- rails db:seed  
 
 
 API
 ---
 
-GET /users/?coords=latitude,longitute   Get lisf of people closer than 30km  
-GET /users/1                            Get person's profile
+- /users/?coords=latitude,longitute GET   Get lisf of people closer than 30km  
+- /users/1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GET                           Get person's profile
+
+
+Examples
+--------
+
