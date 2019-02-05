@@ -1,24 +1,28 @@
-# README
+Description
+-----------
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Application for viewing people at a distance 30km.  
 
-Things you may want to cover:
 
-* Ruby version
+System Dependencies
+-------------------
 
-* System dependencies
+- Ruby 2.5.3 (install with [rbenv](https://github.com/sstephenson/rbenv))
+- Rubygems
+- Bundler (`gem install bundler`)
+- PostgreSQL
 
-* Configuration
 
-* Database creation
+Database creation
+-----------------
 
-* Database initialization
+rails db:create
+rails db:migrate
+rails db:seed
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+API
+---
 
-* Deployment instructions
-
-* ...
+GET /users/?coords=latitude,longitute   Get lisf of people closer than 30km
+GET /users/1                            Get person profile
