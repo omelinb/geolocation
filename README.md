@@ -35,6 +35,7 @@ API
 
 Examples
 --------
+
 ```shell
 curl http://localhost:3000/users/?coords=11.023666,12.326888
 curl http://localhost:3000/users/6
