@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   before_action :find_users, only: :index
   before_action :get_user, only: :show
 
+  # Hardcode
   RADIUS = 30
 
   # GET /users/?coords=latitude,longitude
@@ -21,6 +22,7 @@ class UsersController < ApplicationController
       @users = User.within(RADIUS, origin: user_params)
     end
 
+    # Get user with special id
     def get_user
       @user = User.find(params[:id])
     end
